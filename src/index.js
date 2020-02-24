@@ -4,6 +4,7 @@ import './index.css';
 
 import Grid from './Component/Grid'
 import Buttons from './Component/Buttons'
+import Popup from './Component/Popup'
 
 class Main extends React.Component {
     constructor(props) {
@@ -13,10 +14,17 @@ class Main extends React.Component {
         this.cols = 50;
     
         this.state = {
+            showPopup : false,
              generation : 0,
              gridFull : Array(this.rows).fill().map( () => Array(this.cols).fill(false)),
         }
     }
+
+    togglePopup = () => {
+        this.setState({
+          showPopup: !this.state.showPopup
+        });
+      }
 
     selectBox = (row , col) => {
         let gridCopy = arrayClone(this.state.gridFull);
@@ -43,6 +51,7 @@ class Main extends React.Component {
     playButton = () => {
         clearInterval(this.intervalId)
         this.intervalId = setInterval(this.play , this.speed);
+        
     }
 
     play = () => {
@@ -109,6 +118,25 @@ class Main extends React.Component {
 		this.clear();
 
     }
+
+    gridSize1 = () => {
+        this.cols = 20;
+        this.rows = 10;
+        this.clear();
+    }
+
+    gridSize2 = () => {
+        this.cols = 50 ;
+        this.rows = 30 ;
+        this.clear();
+    }
+
+    gridSize3 = () => 
+    {
+        this.cols = 70 ;
+        this.rows = 50 ;
+        this.clear();
+    }
     
     componentDidMount() {
         this.seed()
@@ -125,12 +153,24 @@ class Main extends React.Component {
                     clear = {this.clear}
                     seed = {this.seed}
                     gridSize = {this.gridSize}
+                    gridSize1 = {this.gridSize1}
+                    gridSize2 = {this.gridSize2}
+                    gridSize3 = {this.gridSize3}
+                    togglePopup = {this.togglePopup}
                 />
                 <Grid gridFull = {this.state.gridFull}
                     rows = {this.rows}
                     cols = {this.cols}
                     selectBox = {this.selectBox}/>
                 <h2>Generation : {this.state.generation}</h2>
+
+                {this.state.showPopup ? 
+                <Popup
+                    text='Close Me'
+                    closePopup={this.togglePopup.bind(this)}
+                />
+                : null
+                }
             </div>
         )
     } 

@@ -9,15 +9,15 @@ export class Buttons extends Component {
         return (
             <div className = 'center'>
                 <ButtonToolbar>
-                    <button className = 'btn btn-default' 
+                    <button className = 'btn btn-success' 
                         onClick={this.props.playButton}>
                         Play
                     </button>
-                    <button className = 'btn btn-default' 
+                    <button className = 'btn btn-danger' 
                         onClick={this.props.pauseButton}>
                         Pause
                     </button>
-                    <button className = 'btn btn-default' 
+                    <button className = 'btn btn-warning' 
                         onClick={this.props.clear}>
                         Clear
                     </button>
@@ -29,9 +29,25 @@ export class Buttons extends Component {
                         onClick={this.props.fast}>
                         Fast
                     </button>
-                    <button className = 'btn btn-default' 
+                    <button className = 'btn btn-primary' 
                         onClick={this.props.seed}>
                         Seed
+                    </button>
+                    <button className = 'btn btn-default' 
+                        onClick={this.props.gridSize1}>
+                        20x30
+                    </button>
+                    <button className = 'btn btn-default' 
+                        onClick={this.props.gridSize2}>
+                        30x50
+                    </button>
+                    <button className = 'btn btn-default' 
+                        onClick={this.props.gridSize3}>
+                        50x70
+                    </button>
+                    <button className = 'btn btn-info' 
+                        onClick={this.props.togglePopup}>
+                        How it works ?
                     </button>
                     {/* <DropdownButton
 						title="Grid Size"
