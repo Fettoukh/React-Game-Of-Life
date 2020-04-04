@@ -120,8 +120,8 @@ class Main extends React.Component {
     }
 
     gridSize1 = () => {
-        this.cols = 20;
-        this.rows = 10;
+        this.cols = 30;
+        this.rows = 20;
         this.clear();
     }
 
