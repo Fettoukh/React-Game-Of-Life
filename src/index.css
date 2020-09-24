@@ -1,6 +1,7 @@
 
 body {
-  background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/squares.png) 
+  background-image: url(./Images/Background.png) ;
+    object-fit: "contain";
 }
   
 .box {
@@ -40,11 +41,12 @@ body {
 }
   
 h1, h2, h3, h4  {
-  color: white;
+  color: black;
   margin: auto;
   text-align: center;
   width: 50%;
   margin-top: 10px;
+  background-color: white
 }
 
 h4 {
@@ -63,6 +65,7 @@ h4 {
   background-color: rgba(0,0,0, 0.5);
 
 }
+
 .popup_inner {
   position: absolute;
   left: 25%;
@@ -71,7 +74,8 @@ h4 {
   bottom: 25%;
   margin: auto;
   background: white;
-  background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/squares.png) 
+  background-image: url(./Images/PopupBackground.jpg) ;
+ background-position: center;
 
 }
 
