@@ -1,18 +1,16 @@
-
 body {
-  background-image: url(./Images/Background.png) ;
-    object-fit: "contain";
+  background-image: url(./Images/2-black-wallpaper-pattern.jpg);
+  object-fit: "contain";
 }
-  
+
 .box {
-  display: inline-block;       
+  display: inline-block;
   border: 1px solid black;
   width: 15px;
   height: 15px;
   margin-left: -1px;
   margin-bottom: -1px;
-  }
-
+}
 
 .off {
   background-color: lightgray;
@@ -21,9 +19,9 @@ body {
 .on {
   background-color: green;
 }
-  
-.box:hover { 
-  background: #00CCFF;
+
+.box:hover {
+  background: #00ccff;
 }
 
 .center {
@@ -39,14 +37,17 @@ body {
   box-shadow: 0px 0px 20px white;
   margin-top: 20px;
 }
-  
-h1, h2, h3, h4  {
-  color: black;
+
+h1,
+h2,
+h3,
+h4 {
+  color: white;
   margin: auto;
   text-align: center;
   width: 50%;
   margin-top: 10px;
-  background-color: white
+  /* background-color: white; */
 }
 
 h4 {
@@ -62,8 +63,7 @@ h4 {
   right: 0;
   bottom: 0;
   margin: auto;
-  background-color: rgba(0,0,0, 0.5);
-
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .popup_inner {
@@ -74,9 +74,8 @@ h4 {
   bottom: 25%;
   margin: auto;
   background: white;
-  background-image: url(./Images/PopupBackground.jpg) ;
- background-position: center;
-
+  background-image: url(./Images/PopupBackground.jpg);
+  background-position: center;
 }
 
 li {

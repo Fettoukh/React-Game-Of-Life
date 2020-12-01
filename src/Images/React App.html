@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://localhost:3000/amine -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <style type="text/css">* {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+</style><style type="text/css">.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+}
+
+.header__logo {
+  height: 75px;
+  object-fit: contain;
+  margin-left: 20px;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header__input {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  border: 1px solid lightgray;
+}
+
+.header__input > input {
+  flex: 1 1;
+  border: none;
+  outline-width: 0;
+}
+
+/* .header__input > input::placeholder {
+  padding-left: 5px;
+  font-size: 18px;
+} */
+
+.header__inputButton {
+  width: 50px !important;
+  background-color: #fafafa;
+  border-left: 1px solid lightgray;
+  color: gray;
+}
+
+.header__icons {
+  display: flex;
+  align-items: center;
+}
+
+.header__icon {
+  margin-right: 8px;
+}
+</style><style type="text/css">.sidebar {
+  flex: 0.2 1;
+}
+
+.sidebar > hr {
+  height: 1px;
+  border: 0;
+  background-color: lightgray;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+</style><style type="text/css">.sidebarRow {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.sidebarRow__icon {
+  color: #606060;
+  font-size: x-large !important;
+}
+
+.sidebarRow__title {
+  flex: 1 1;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.sidebarRow:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.sidebarRow:hover > .sidebarRow__icon {
+  color: red;
+}
+
+.sidebarRow:hover > .sidebarRow__title {
+  font-weight: bold;
+}
+
+.sidebarRow.selected {
+  background-color: lightgray;
+}
+
+.sidebarRow.selected > .sidebarRow__icon {
+  color: red;
+}
+
+.sidebarRow.selected > .sidebarRow__title {
+  font-weight: bold;
+}
+</style><style type="text/css">.recommendedVideos {
+  background-color: #f9f9f9;
+  flex: 0.8 1;
+  padding: 40px 20px;
+  padding-bottom: 0;
+}
+
+.recommendedVideos > h2 {
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+
+.recommendedVideos__videos {
+  display: flex;
+  flex-wrap: wrap;
+}
+</style><style type="text/css">.videoCard {
+  margin-bottom: 40px;
+  width: 270px;
+  padding-left: 40px;
+}
+
+.videoCard__thumbnail {
+  height: 140px;
+  width: 250px;
+  /* object-fit: contain; */
+}
+
+.videoCard__info {
+  display: flex;
+  margin-top: 10px;
+  padding-right: 30px;
+}
+
+.videoCard__infoAvatar {
+  height: 30px !important;
+  width: 30px !important;
+}
+
+.videoCard__infoText {
+  margin-left: 15px;
+}
+
+.videoCard__infoText > h4 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.videoCard__infoText > p {
+  font-size: 14px;
+  color: gray;
+}
+</style><style type="text/css">.app__page {
+  display: flex;
+}
+</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="app"><h1>Amine Page</h1></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./React App_files/bundle.js.téléchargé"></script><script src="./React App_files/0.chunk.js.téléchargé"></script><script src="./React App_files/main.chunk.js.téléchargé"></script><script src="./React App_files/main.86eaba36df81ad6b5b05.hot-update.js.téléchargé"></script>
+
+</body></html>
