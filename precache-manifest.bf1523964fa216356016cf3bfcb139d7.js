@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "479f3c76db7f2db6d7a9fa8608a4adbc",
+    "revision": "5b6ddfbe7a2f2c4a18d8906ec16a15ee",
     "url": "/React-Game-Of-Life/index.html"
   },
   {
-    "revision": "1cd6fe1e90fbf83bf73b",
-    "url": "/React-Game-Of-Life/static/css/main.1cdd90c2.chunk.css"
+    "revision": "238c046896e7131b4c6c",
+    "url": "/React-Game-Of-Life/static/css/main.ec9d7ba9.chunk.css"
   },
   {
     "revision": "a96bae0f2a8f7e277733",
@@ -16,11 +16,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/React-Game-Of-Life/static/js/2.c4360a5c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1cd6fe1e90fbf83bf73b",
+    "revision": "238c046896e7131b4c6c",
     "url": "/React-Game-Of-Life/static/js/main.0c3262f2.chunk.js"
   },
   {
     "revision": "ca0e28939b262954d9b4",
     "url": "/React-Game-Of-Life/static/js/runtime-main.25b27ad1.js"
+  },
+  {
+    "revision": "72ab15042a0acace39a9a36db795f44a",
+    "url": "/React-Game-Of-Life/static/media/2-black-wallpaper-pattern.72ab1504.jpg"
   }
 ]);
